@@ -1,0 +1,40 @@
+# Liqid Monorepo
+
+Welcome to the **Liqid** project monorepo. This repository houses the ecosystem for the Liqid design system and applications.
+
+## Structure
+
+- **[liqid-components](./liqid-components)**: The core React component library (Rslib).
+- **[liqid-ui](./liqid-ui)**: The Desktop UI library (Rslib).
+- **[liqid-docs](./liqid-docs)**: Documentation website (Rsbuild App).
+- **[liqid-playground](./liqid-playground)**: Component playground and testing environment (Rsbuild App).
+
+## Setup
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/marius-patrik/liqid.git
+   cd liqid
+   ```
+
+2. **Initialize submodules:**
+
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+3. **Install dependencies:**
+   Navigate to any submodule to install its specific dependencies.
+   ```bash
+   cd liqid-components
+   npm install
+   ```
+
+## Development
+
+Each submodule is independent. You can run `npm run dev` inside `liqid-docs` or `liqid-playground` to start their development servers.
+
+## License
+
+MIT
