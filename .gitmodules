@@ -1,8 +1,4 @@
-[submodule "libraries/liqid/liqid-components"]
-	path = libraries/liqid/liqid-components
 	url = https://github.com/marius-patrik/liqid-components.git
-[submodule "libraries/liqid/liqid-ui"]
-	path = libraries/liqid/liqid-ui
 	url = https://github.com/marius-patrik/liqid-ui.git
 [submodule "apps/liqid-docs"]
 	path = apps/liqid-docs
@@ -19,3 +15,6 @@
 [submodule "apps/pokedex"]
 	path = apps/pokedex
 	url = https://github.com/marius-patrik/pokedex.git
+[submodule "libraries/liqid"]
+	path = libraries/liqid
+	url = https://github.com/marius-patrik/libraries.git
