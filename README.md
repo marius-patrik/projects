@@ -47,7 +47,7 @@ This monorepo contains the following repositories as git submodules:
    Run the installation script to install all dependencies:
 
    ```bash
-   ./install_all.sh
+   ./.scripts/install_all.sh
    ```
 
    Or manually install:
@@ -75,13 +75,13 @@ npm run dev
 
 ## Scripts
 
-| Script                | Description                                      |
-| --------------------- | ------------------------------------------------ |
-| `./install_all.sh`     | Install dependencies and build all libraries     |
-| `./lint_all.sh`        | Lint all submodules                              |
-| `./push_all.sh`        | Push all submodules and root repo to origin/main |
-| `./force_push_all.sh`  | Stage, commit, and force push all repos (with confirmation) |
-| `./squash_all.sh`      | Squash all history and force push (destructive)  |
+| Script                          | Description                                      |
+| ------------------------------- | ------------------------------------------------ |
+| `./.scripts/install_all.sh`     | Install dependencies and build all libraries     |
+| `./.scripts/lint_all.sh`        | Lint all submodules                              |
+| `./.scripts/push_all.sh`        | Push all submodules and root repo to origin/main |
+| `./.scripts/force_push_all.sh`  | Stage, commit, and force push all repos (with confirmation) |
+| `./.scripts/squash_all.sh`      | Squash all history and force push (destructive)  |
 
 ## License
 
