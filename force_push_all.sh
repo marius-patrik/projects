@@ -91,7 +91,8 @@ done
 echo "=================================================="
 echo "Updating submodule pointers in root"
 echo "=================================================="
-git add libraries/liqid "${nested_submodules[@]}" "${app_submodules[@]}"
+# Only add top-level submodules (not nested ones - they're managed by libraries/liqid)
+git add libraries/liqid "${app_submodules[@]}"
 if ! git diff-index --quiet HEAD --; then
     git commit -m "chore: update submodule pointers" || true
 fi
