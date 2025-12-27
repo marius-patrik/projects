@@ -75,12 +75,13 @@ npm run dev
 
 ## Scripts
 
-| Script            | Description                                      |
-| ----------------- | ------------------------------------------------ |
-| `./install_all.sh` | Install dependencies and build all libraries     |
-| `./lint_all.sh`   | Lint all submodules                              |
-| `./push_all.sh`   | Push all submodules and root repo to origin/main |
-| `./squash_all.sh` | Squash all history and force push (destructive)  |
+| Script                | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| `./install_all.sh`     | Install dependencies and build all libraries     |
+| `./lint_all.sh`        | Lint all submodules                              |
+| `./push_all.sh`        | Push all submodules and root repo to origin/main |
+| `./force_push_all.sh`  | Stage, commit, and force push all repos (with confirmation) |
+| `./squash_all.sh`      | Squash all history and force push (destructive)  |
 
 ## License
 
