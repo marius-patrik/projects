@@ -19,12 +19,6 @@
 [submodule "liqid"]
 	path = liqid
 	url = https://github.com/marius-patrik/liqid.git
-[submodule "liqid/liqid-components"]
-	path = liqid/liqid-components
-	url = https://github.com/marius-patrik/liqid-components.git
-[submodule "liqid/liqid-ui"]
-	path = liqid/liqid-ui
-	url = https://github.com/marius-patrik/liqid-ui.git
 [submodule "RobotArm"]
 	path = RobotArm
 	url = https://github.com/marius-patrik/RobotArm.git
