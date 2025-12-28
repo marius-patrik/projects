@@ -1,9 +1,3 @@
-[submodule "liqid-docs"]
-	path = liqid/liqid-docs
-	url = https://github.com/marius-patrik/liqid-docs.git
-[submodule "liqid-showcase"]
-	path = liqid/liqid-showcase
-	url = https://github.com/marius-patrik/liqid-showcase.git
 [submodule "portfolio-page"]
 	path = portfolio-page
 	url = https://github.com/marius-patrik/portfolio-page.git
