@@ -1,45 +1,21 @@
-[submodule "portfolio-page"]
-	path = portfolio-page
-	url = https://github.com/marius-patrik/portfolio-page.git
-[submodule "phonebooth"]
-	path = phonebooth
+[submodule "libraries/plc"]
+	path = libraries/plc
+	url = https://github.com/marius-patrik/plc.git
+[submodule "applications/phonebooth"]
+	path = applications/phonebooth
 	url = https://github.com/marius-patrik/phonebooth.git
-[submodule "tradebot"]
-	path = tradebot
+[submodule "applications/tradebot"]
+	path = applications/tradebot
 	url = https://github.com/marius-patrik/tradebot.git
-[submodule "pokedex"]
-	path = pokedex
+[submodule "applications/pokedex"]
+	path = applications/pokedex
 	url = https://github.com/marius-patrik/pokedex.git
-[submodule "liqid"]
-	path = liqid
-	url = https://github.com/marius-patrik/liqid.git
-[submodule "RobotArm"]
-	path = RobotArm
+[submodule "hardware/RobotArm"]
+	path = hardware/RobotArm
 	url = https://github.com/marius-patrik/RobotArm.git
-[submodule "SuperHumanRobot"]
-	path = SuperHumanRobot
+[submodule "hardware/SuperHumanRobot"]
+	path = hardware/SuperHumanRobot
 	url = https://github.com/marius-patrik/SuperHumanRobot.git
-[submodule "VRHeadset"]
-	path = VRHeadset
+[submodule "hardware/VRHeadset"]
+	path = hardware/VRHeadset
 	url = https://github.com/marius-patrik/VRHeadset.git
-[submodule "todolist"]
-	path = todolist
-	url = https://github.com/marius-patrik/todolist.git
-[submodule "clock"]
-	path = clock
-	url = https://github.com/marius-patrik/clock.git
-[submodule "camera"]
-	path = camera
-	url = https://github.com/marius-patrik/camera.git
-[submodule "calculator"]
-	path = calculator
-	url = https://github.com/marius-patrik/calculator.git
-[submodule "calendar"]
-	path = calendar
-	url = https://github.com/marius-patrik/calendar.git
-[submodule "browser"]
-	path = browser
-	url = https://github.com/marius-patrik/browser.git
-[submodule "notes"]
-	path = notes
-	url = https://github.com/marius-patrik/notes.git
