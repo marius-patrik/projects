@@ -53,6 +53,7 @@ This project is currently in the planning phase. Development will begin soon.
 
 - **React** - UI framework
 - **TypeScript** - Type safety
+- **PLC Core** - Component library
 - **WebSocket** - Real-time communication
 - **WebRTC** - Voice/video calling
 
@@ -127,8 +128,8 @@ This project is licensed under the **MIT License**.
 
 ## 🔗 Related Projects
 
-- **[liqid-components](../liqid/liqid-components/)** - Core component library
-- **[liqid-ui](../liqid/liqid-ui/)** - Desktop UI library
+- **[plc-core](../plc/plc-core/)** - Core component library
+- **[plc-ui](../plc/plc-ui/)** - Desktop UI library
 - **[phonebooth](../phonebooth/)** - Phone application
 
 ---
@@ -138,4 +139,3 @@ This project is licensed under the **MIT License**.
 **Coming Soon - Stay Tuned! 💬**
 
 </div>
-

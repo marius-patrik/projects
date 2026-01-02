@@ -6,32 +6,41 @@ Welcome to the **Portfolio** project monorepo. This repository houses all person
 
 This monorepo contains the following repositories as git submodules:
 
-### Core Libraries
+### Core Libraries (PLC Design System)
 
-- **[liqid-components](https://github.com/marius-patrik/liqid-components.git)** (`liqid-components`): Core React component library with glassmorphism styling (Rslib)
-- **[liqid-ui](https://github.com/marius-patrik/liqid-ui.git)** (`liqid-ui`): Desktop UI library for window management and shells (Rslib)
-- **[liqid](https://github.com/marius-patrik/liqid.git)** (`liqid`): Liqid design system bundle package
+- **[plc](./plc/)** - PLC design system monorepo containing:
+  - **[plc-core](./plc/plc-core/)** - Core React component library with glassmorphism styling (Rslib)
+  - **[plc-core-types](./plc/plc-core-types/)** - TypeScript type definitions for plc-core
+  - **[plc-ui](./plc/plc-ui/)** - Desktop UI library for window management (Rslib)
+  - **[plc-ui-types](./plc/plc-ui-types/)** - TypeScript type definitions for plc-ui
+  - **[plc-docs](./plc/plc-docs/)** - Documentation website (Rsbuild App)
+  - **[plc-playground](./plc/plc-playground/)** - Component playground (Rsbuild App)
 
 ### Applications
 
-- **[liqid-docs](https://github.com/marius-patrik/liqid-docs.git)** (`liqid-docs`): Documentation website (Rsbuild App)
-- **[liqid-showcase](https://github.com/marius-patrik/liqid-showcase.git)** (`liqid-showcase`): Demo desktop showcase application (Rsbuild App)
-- **[phonebooth](https://github.com/marius-patrik/phonebooth.git)** (`phonebooth`): Phone application
-- **[tradebot](https://github.com/marius-patrik/tradebot.git)** (`tradebot`): Trading bot application
-- **[pokedex](https://github.com/marius-patrik/pokedex.git)** (`pokedex`): Pokémon database application
-- **[portfolio-page](https://github.com/marius-patrik/portfolio-page.git)** (`portfolio-page`): Portfolio showcase website (Rsbuild App)
+- **[phonebooth](./phonebooth/)** - VoIP calling application (React + Express)
+- **[tradebot](./tradebot/)** - CFD trading bot for IG Markets (React + Express)
+- **[pokedex](./pokedex/)** - Pokémon database application (React + Rsbuild)
+
+### Planned / In Development
+
+- **[messenger](./messenger/)** - Modern messaging application (Planned)
+- **[ide](./ide/)** - Web-based integrated development environment (Planned)
+- **[daw](./daw/)** - Digital audio workstation (Planned)
+- **[MinecraftMod](./MinecraftMod/)** - Minecraft modding project (Planned)
+- **[UnityGame](./UnityGame/)** - Unity game development project (Planned)
 
 ### Hardware Projects
 
-- **[RobotArm](https://github.com/marius-patrik/RobotArm.git)** (`RobotArm`): Robot arm project
-- **[SuperHumanRobot](https://github.com/marius-patrik/SuperHumanRobot.git)** (`SuperHumanRobot`): SuperHuman robot project
-- **[VRHeadset](https://github.com/marius-patrik/VRHeadset.git)** (`VRHeadset`): VR headset project
+- **[RobotArm](./RobotArm/)** - Robotic arm with precise control capabilities
+- **[SuperHumanRobot](./SuperHumanRobot/)** - Advanced humanoid robot with AI capabilities
+- **[VRHeadset](./VRHeadset/)** - Virtual reality headset project
 
-### Repository Structure
+### Other Repositories
 
-- **[portfolio](https://github.com/marius-patrik/portfolio.git)**: Root repository (this repo)
-- **[libraries](https://github.com/marius-patrik/libraries.git)**: Libraries collection (legacy, replaced by individual submodules)
-- **[apps](https://github.com/marius-patrik/apps.git)**: Applications collection (legacy, replaced by individual submodules)
+- **[dockclon](./dockclon/)** - Docker clone project
+- **[enginsoft](./enginsoft/)** - Engineering software project
+- **[gitclone](./gitclone/)** - Git clone implementation
 
 ## Setup
 
@@ -58,33 +67,31 @@ This monorepo contains the following repositories as git submodules:
    ./.scripts/install_all.sh
    ```
 
-   Or manually install:
+   Or manually install for specific projects:
 
    ```bash
-   # Root dependencies (workspaces)
-   npm install
-
-   # Libraries
-   cd liqid-components && npm install && cd ..
-   cd liqid-ui && npm install && cd ..
-   cd liqid && npm install && cd ..
+   # PLC Libraries
+   cd plc/plc-core-types && npm install && cd ../..
+   cd plc/plc-core && npm install && cd ../..
+   cd plc/plc-ui-types && npm install && cd ../..
+   cd plc/plc-ui && npm install && cd ../..
+   cd plc/plc-docs && npm install && cd ../..
+   cd plc/plc-playground && npm install && cd ../..
 
    # Applications
-   cd liqid-docs && npm install && cd ..
-   cd liqid-showcase && npm install && cd ..
-   cd phonebooth && npm install && cd ..
+   cd phonebooth/client && npm install && cd ../..
+   cd phonebooth/server && npm install && cd ../..
    cd tradebot && npm install && cd ..
    cd pokedex && npm install && cd ..
-   cd portfolio-page && npm install && cd ..
    ```
 
 ## Development
 
-Each submodule is independent. You can run `npm run dev` inside any application directory to start their development servers.
+Each submodule is independent. Navigate to any project directory and run `npm run dev` to start the development server.
 
 Example:
 ```bash
-cd liqid-showcase
+cd plc/plc-playground
 npm run dev
 ```
 
@@ -98,6 +105,33 @@ npm run dev
 | `./.scripts/push_all.sh`        | Push all submodules and root repo to origin/main |
 | `./.scripts/force_push_all.sh`  | Stage, commit, and force push all repos (with confirmation) |
 | `./.scripts/squash_all.sh`      | Squash all history and force push (destructive)  |
+
+## Project Structure
+
+```
+portfolio/
+├── plc/                    # PLC design system monorepo
+│   ├── plc-core/           # Core component library
+│   ├── plc-core-types/     # Type definitions for plc-core
+│   ├── plc-ui/             # Desktop UI library
+│   ├── plc-ui-types/       # Type definitions for plc-ui
+│   ├── plc-docs/           # Documentation website
+│   └── plc-playground/     # Component playground
+├── phonebooth/             # VoIP application
+├── tradebot/               # Trading bot
+├── pokedex/                # Pokémon database
+├── messenger/              # Messaging app (planned)
+├── ide/                    # IDE project (planned)
+├── daw/                    # DAW project (planned)
+├── MinecraftMod/           # Minecraft mod (planned)
+├── UnityGame/              # Unity game (planned)
+├── RobotArm/               # Robot arm hardware project
+├── SuperHumanRobot/        # Humanoid robot project
+├── VRHeadset/              # VR headset project
+├── dockclon/               # Docker clone
+├── enginsoft/              # Engineering software
+└── gitclone/               # Git clone implementation
+```
 
 ## License
 

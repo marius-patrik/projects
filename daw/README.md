@@ -33,7 +33,7 @@ This project is currently in the planning phase. Development will begin soon.
 - 🎸 **Virtual Instruments** - Software synthesizers and instruments
 - 📊 **Audio Analysis** - Spectrum analyzer and waveform visualization
 - 💾 **Project Management** - Save and load projects
-- 🎨 **Modern UI** - Beautiful, intuitive interface
+- 🎨 **Modern UI** - Beautiful, intuitive interface using PLC components
 
 ### Advanced Features
 
@@ -51,6 +51,7 @@ This project is currently in the planning phase. Development will begin soon.
 
 - **React** - UI framework
 - **TypeScript** - Type safety
+- **PLC Core** - Component library
 - **Web Audio API** - Audio processing
 - **Canvas API** - Waveform visualization
 
@@ -117,8 +118,8 @@ This project is licensed under the **MIT License**.
 
 ## 🔗 Related Projects
 
-- **[liqid-components](../liqid/liqid-components/)** - Core component library
-- **[liqid-ui](../liqid/liqid-ui/)** - Desktop UI library
+- **[plc-core](../plc/plc-core/)** - Core component library
+- **[plc-ui](../plc/plc-ui/)** - Desktop UI library
 
 ---
 
@@ -127,4 +128,3 @@ This project is licensed under the **MIT License**.
 **Coming Soon - Stay Tuned! 🎵**
 
 </div>
-

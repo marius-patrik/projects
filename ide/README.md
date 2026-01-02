@@ -51,6 +51,7 @@ This project is currently in the planning phase. Development will begin soon.
 
 - **React** - UI framework
 - **TypeScript** - Type safety
+- **PLC Core** - Component library
 - **Monaco Editor** - Code editor (VS Code editor)
 - **WebSocket** - Real-time features
 
@@ -118,8 +119,8 @@ This project is licensed under the **MIT License**.
 
 ## 🔗 Related Projects
 
-- **[liqid-components](../liqid/liqid-components/)** - Core component library
-- **[liqid-ui](../liqid/liqid-ui/)** - Desktop UI library
+- **[plc-core](../plc/plc-core/)** - Core component library
+- **[plc-ui](../plc/plc-ui/)** - Desktop UI library
 
 ---
 
@@ -128,4 +129,3 @@ This project is licensed under the **MIT License**.
 **Coming Soon - Stay Tuned! 💻**
 
 </div>
-
